@@ -49,7 +49,7 @@ fun main() {
     //String a un entero cuando computabamos por consola
     //Cuando ingresabamos un numero del tipo Int lanzaba un
     //NumberFormatException que nos detenia el programa
-    println("Ingrese un numero entero: ")
+    //println("Ingrese un numero entero: ")
     //var numero = readln()!!.toInt()
     //println("El numero ingresado es $numero")
     //Se lanza un exception siempre que la cadena no sea una representacion
@@ -57,7 +57,15 @@ fun main() {
     //Lo podemos solucionar con  un .toIntOrNull()
     //Devuelve un entero si lo puede convertir en caso de que no devuelve un null
     //Validar un entero
-    var numero = readln().toIntOrNull()
-    println("El numero ingresado es: $numero")
-//005410
+    //var numero = readln().toIntOrNull()
+    //println("El numero ingresado es: $numero")
+    //Podemos usar el operador Elvis si quisieramos guardar otrovalor distinto a null
+    //var numero = readln().toIntOrNull() ?: 0
+    //println("El numero ingresado es: $numero")
+    //Algunos ejemplos son toDoubleOrNull toFloatOrNull toCharToNull
+    //Ejemplo
+    println("Ingrese su sueldo: ")
+    var sueldo = readln().toDoubleOrNull() ?: 0.0
+    println("Su sualdoes de $sueldo")
+//010820
 }
