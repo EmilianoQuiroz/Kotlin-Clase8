@@ -6,4 +6,6 @@ fun main(){
 fun palabraMasLarga(vararg palabras: String):Int{
     var max = 0
     for (i in palabras) if (i.length > max) max = i.length
+    return max
+
 }//020914
